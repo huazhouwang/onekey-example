@@ -1,8 +1,8 @@
 import "./App.css";
 import OneKeyConnect from "@onekeyfe/js-sdk";
-import { useCallback, useEffect, useState } from "react";
-import { Button, Code, Input, Text, Textarea, useToasts } from "@geist-ui/core";
-import { parse, serialize } from "@ethersproject/transactions";
+import { useCallback, useState } from "react";
+import { Button, Input, Text, Textarea, useToasts } from "@geist-ui/core";
+import { serialize } from "@ethersproject/transactions";
 
 function App() {
   const [path, setPath] = useState("m/44'/60'/0'/0/0");
