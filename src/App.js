@@ -72,8 +72,14 @@ function App() {
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
+        marginBottom: "32px",
       }}
     >
+      <div style={{ width: "100%", padding: "16px" }}>
+        <Text margin={0} ml={"16px"}>
+          OneKey Example
+        </Text>
+      </div>
       <div
         style={{
           display: "flex",
@@ -91,7 +97,17 @@ function App() {
       <Textarea
         w={"500px"}
         h={"400px"}
-        placeholder="Please enter transaction"
+        placeholder={`Please enter transaction likes:
+        
+{
+  "nonce": 0,
+  "gasPrice": "0x0df8475800",
+  "gasLimit": "0x0186a0",
+  "to": "0x3535353535353535353535353535353535353535",
+  "value": "0x64",
+  "data": "0x",
+  "chainId": 0
+}`}
         value={tx}
         onChange={(e) => setTx(e.target.value)}
         onKeyDown={(e) => {
