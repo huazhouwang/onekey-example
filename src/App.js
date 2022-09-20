@@ -64,7 +64,7 @@ function App() {
     );
 
     setTxHex(signedTx);
-  }, [address, tx, setToast]);
+  }, [address, path, tx, setToast]);
 
   return (
     <div
